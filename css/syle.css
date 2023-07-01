@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: var(--ff);
+}
+:root{
+    --ff: 'poppins',sans-serif;
+    --c-w: #fff;
+}
+
+
+.section-registr {
+    background: url('../picture/background6.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login {
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login__title{
+    margin: 0;
+    margin-top: 1.1em;
+    font-size: 2em;
+    color: var(--c-w);
+    font-family: var(--ff);
+}
+.input-box{
+    width: 310px;
+    margin-top: 30px;
+    position: relative;
+    border-bottom: 2px solid var(--c-w);
+}
+.input-box__label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: var(--c-w);
+    font-size: 1em;
+    pointer-events: none;
+    font-family: var(--ff);
+    transition: .5s;
+}
+input:focus ~ .input-box__label,
+input:valid ~ .input-box__label {
+    top: -5px;
+}
+.input-box__input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: var(--c-w);
+    font-family: var(--ff);
+}
+
+.remember{
+    margin: 13px;
+}
+.remember__label{
+    font-family: var(--ff);
+    color: var(--c-w);
+    font-size: .9em;
+}
+.remember__checkbox{
+    margin-right: 3px;
+}
+.remember__link{
+    color: var(--c-w);
+    text-decoration: none;
+}
+.remember__link:hover{
+    text-decoration: underline;
+}
+
+.login__button{
+    width: 310px;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+.register{
+    color: var(--c-w);
+    font-family: var(--ff);
+    font-size: .9em;
+    margin-top: 30px;
+}
+.register__link{
+    color: var(--c-w);
+    text-decoration: none;
+    font-weight: 600;
+}
+.register__link:hover{
+    text-decoration: underline;
+}
+
+@media(max-width:375px){
+    .login{
+        padding: 0;
+    }
+}
+
+
+
+
+
+
+
+
+/* ------------------------------------SNEAKERS---------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+.wrapper-sneakers-promo{
+  min-height: 100vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(53, 53, 53);
+}
+
+.sneakers-promo{
+  width: min(100% - 2rem, 1200px);
+  margin-inline: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.sneaker-card{
+  padding: 1.5rem;
+  margin: 0;
+  width: 350px;
+  border-radius: 50px;
+  color: white;
+}
+
+.sneaker-card_color_orange{
+  background: linear-gradient(#f72648,#fccb3c);
+}
+
+.sneaker-card_color_blue{
+  background: linear-gradient(#3CA3FC, #ffbc00);
+}
+
+.sneaker-card_color_green{
+  background: linear-gradient(#26C9F7, #00cd78);
+}
+.sneaker-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sneaker-card-header__prise{
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.sneaker-card-header__fav{
+  appearance: none;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  mask-image: url("../images/heart-svgrepo-com.svg");
+  -webkit-mask-image: url("../images/heart-svgrepo-com.svg");
+  cursor: pointer;
+  outline: none;
+  transition: .5s;
+}
+
+.sneaker-card-header__fav:checked{
+  mask-image: url("../images/heart-filled-svgrepo-com.svg");
+  -webkit-mask-image: url("../images/heart-filled-svgrepo-com.svg");
+}
+
+
+.sneaker-card-header__fav:hover {
+  mask-image: url("../images/heart-filled-svgrepo-com.svg");
+  -webkit-mask-image: url("../images/heart-filled-svgrepo-com.svg");
+}
+
+.sneaker-card__title{
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  letter-spacing: 0.1em;
+  margin-top: 2em;
+  margin-bottom: 0;
+}
+
+.sneaker-card__text{
+  font-size: 0.9rem;
+  line-height: 1.2;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.sneaker-card-image {
+  position: relative;
+  height: 300px;
+}
+
+.sneaker-card-image__img {
+  display: block;
+  position: absolute;
+  width: 380px;
+  top: -15px;
+  left: -20px;
+  transition: 0.5s;
+}
+
+.sneaker-card-image__img:hover{
+  width: 420px;
+}
+
+.sneaker-card-footer{
+  text-align: center;
+  position: relative;
+}
+
+.btn{
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  padding: 1em;
+  padding-inline: 2em;
+  letter-spacing: 0.1em;
+  transition: .5s;
+  border-radius: 50px;
+  border: 1px solid rgb(255, 255, 255, 0.6);
+  background-color: inherit;
+  color: white;
+  cursor: pointer;
+}
+
+.btn:hover{
+  border-color: white;
+  color: black;
+}
+
+.sneaker-card-footer__type{
+  font-size: 1rem;
+  line-height: 1;
+  margin-top: 1em;
+  margin-bottom: 0;
+  font-variant: small-caps;
+  font-feature-settings: "c2sc", "smcp";
+}
+
+
+@media (max-width: 1170px){
+  .sneakers-promo {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  .sneaker-card-image__img:hover{
+    width: 380px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+/* ------------------------------------CALENDAR---------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+* {
+  font-size: 18px;
+}
+
+:root{
+  --ff: 'PT Sans', sans-serif;
+  --fw-n: 400;
+  --fw-b: 700;
+  --fs-p: 1rem;
+  --fs-2: 3.55rem;
+  --fs-3: 1.33rem;
+
+
+  --bc-clr-light: #F8F8F8;
+  --bc-clr-dark: #383838;
+  --f-clr-light: #FFF;
+  --f-clr-dark: #000000;
+}
+
+
+.wrapper-features{
+  width: min(100% - 2rem, 1200px);
+  margin-inline:auto;
+}
+.features{
+  width: 100%;
+  padding: 5rem 2rem;
+  border-radius: 50px;
+  margin-top: 5rem;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.features_color_light{
+  background-color: var(--bc-clr-light);
+  color: var(--f-clr-dark)
+}
+
+.features_color_dark{
+  background-color: var(--bc-clr-dark);
+  color: var(--f-clr-light)
+}
+
+.features_digits{
+  --col-count: 4;
+}
+
+.features_principles{
+  --col-count: 5;
+}
+
+.features__title{
+  width: 60%;
+  margin-inline: auto;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: var(--fs-2);
+  font-family: var(--ff);
+  line-height: 1.125em;
+  font-weight: var(--fw-b);
+}
+
+.features__subtitle{
+  width: 60%;
+  margin-inline: auto;
+  text-align: center;
+  font-size: var(--fs-3);
+  line-height: 1.2em;
+  font-weight: var(--fw-n);
+  margin-top: 0.75em;
+  margin-bottom: 0;
+  font-family: var(--ff);
+}
+
+.features-items{
+  width: 100%;
+  margin-top: 3rem;
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+
+  display: grid;
+  grid-template-columns: repeat(var(--col-count),1fr);
+  column-gap: 2rem;
+  row-gap: 3rem;
+}
+
+.feature-items__title {
+  margin: 0;
+  padding: 0;
+  font-family: var(--ff);
+  font-size: var(--fs3);
+  font-weight: var(--fw-b);
+  line-height: 1.15em;
+}
+
+.feature-items__text{
+  margin-top: 1em;
+  margin-bottom: 0;
+  font-family: var(--ff);
+  font-size: var(--fs-p);
+  line-height: 1.2em;
+}
+
+.features__moon{
+  background-image: url(../image/moon.png);
+  background-repeat: no-repeat;
+  width: 340px;
+  height: 340px;
+  background-size: cover;
+  opacity: .3;
+  position: absolute;
+  bottom: -60px;
+  left: 60px;
+}
+
+@media(max-width: 900px){
+  .features_digits{
+    --col-count: 2;
+  }
+  .features_principles{
+    --col-count: 3;
+  }
+}
+
+@media(max-width: 600px){
+  .features_digits{
+    --col-count: 1;
+  }
+  .features_principles{
+    --col-count: 1;
+  }
+}
